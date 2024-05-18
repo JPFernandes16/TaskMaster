@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <display-name>WWW_TaskMaster</display-name>
+
+  <!-- Register Servlet -->
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+
+  <!-- Login Servlet -->
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+
+  <!-- Task Servlet -->
+  <servlet>
+    <servlet-name>Task</servlet-name>
+    <servlet-class>Task</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Task</servlet-name>
+    <url-pattern>/Task</url-pattern>
+  </servlet-mapping>
+
+  <!-- ProcessTaskServlet -->
+  <servlet>
+    <servlet-name>ProcessTaskServlet</servlet-name>
+    <servlet-class>ProcessTaskServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProcessTaskServlet</servlet-name>
+    <url-pattern>/ProcessTaskServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- AddTask Servlet -->
+  <servlet>
+    <servlet-name>AddTask</servlet-name>
+    <servlet-class>AddTask</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddTask</servlet-name>
+    <url-pattern>/AddTask</url-pattern>
+  </servlet-mapping>
+
+  <!-- ViewTask Servlet -->
+  <servlet>
+    <servlet-name>ViewTask</servlet-name>
+    <servlet-class>ViewTask</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewTask</servlet-name>
+    <url-pattern>/ViewTask</url-pattern>
+  </servlet-mapping>
+
+  <!-- ViewTasks Servlet -->
+  <servlet>
+    <servlet-name>ViewTasks</servlet-name>
+    <servlet-class>ViewTasks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewTasks</servlet-name>
+    <url-pattern>/ViewTasks</url-pattern>
+  </servlet-mapping>
+
+  <!-- EditTask Servlet -->
+  <servlet>
+    <servlet-name>EditTask</servlet-name>
+    <servlet-class>EditTask</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditTask</servlet-name>
+    <url-pattern>/EditTask</url-pattern>
+  </servlet-mapping>
+
+  <!-- DeleteTask Servlet -->
+  <servlet>
+    <servlet-name>DeleteTask</servlet-name>
+    <servlet-class>DeleteTask</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTask</servlet-name>
+    <url-pattern>/DeleteTask</url-pattern>
+  </servlet-mapping>
+
+  <!-- LogoutServlet -->
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
